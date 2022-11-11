@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -10,8 +10,9 @@ html {
 #header {
     background-color: #000;
 }
+
 .header {
-    background: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)),url(https://github.com/sahenuralam4/sahenuralam.github.io/blob/c8c7f1d9042a6e1feca3d59a923faee776ba4bfd/img/backgound.jpg?raw=true);
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://github.com/sahenuralam4/sahenuralam.github.io/blob/c8c7f1d9042a6e1feca3d59a923faee776ba4bfd/img/backgound.jpg?raw=true);
     background-size: cover;
     min-height: 110vh;
     max-width: 100%;
@@ -44,7 +45,7 @@ html {
     outline: none;
 }
 
-.languageButton{
+.languageButton {
     background-color: transparent;
     height: 3.5rem;
     width: 10rem;
@@ -149,7 +150,7 @@ html {
     font-weight: 400;
 }
 
-.first-frame img{
+.first-frame img {
     max-height: auto;
     max-width: 90%;
     position: relative;
@@ -174,35 +175,57 @@ html {
 
 
 
-@media (max-width: 950px){
-    html{
+@media (max-width: 950px) {
+    html {
         font-size: 50%;
     }
+
     .header {
         min-height: 80vh;
     }
+
+    .dropdown-manu svg {
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        max-width: 4rem;
+        max-height: 4rem;
+    }
 }
 
 
-@media (max-width: 550px){
-    html{
+@media (max-width: 550px) {
+    html {
         font-size: 40%;
     }
+
     .header {
         min-height: 70vh;
     }
+
+    .dropdown-manu svg {
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+    }
 }
 
-@media (max-width: 350px){
-    html{
+@media (max-width: 350px) {
+    html {
         font-size: 30%;
     }
+
     .header {
         min-height: 60vh;
     }
+
     .dropdown-manu svg {
-        max-width: 2rem;
-        max-height: 2rem;
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        max-width: 1rem;
+        max-height: 1rem;
     }
 }
-
