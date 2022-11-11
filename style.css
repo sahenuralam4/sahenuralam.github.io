@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#header {
+    background-color: #000;
+}
+.header {
+    background: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)),url(https://github.com/sahenuralam4/sahenuralam.github.io/blob/c8c7f1d9042a6e1feca3d59a923faee776ba4bfd/img/backgound.jpg?raw=true);
+    background-size: cover;
+    min-height: 110vh;
+    max-width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+
+
+.navbar {
+    top: -3rem;
+    margin: 0 5rem 0 5rem;
+}
+
+.navbar-brand svg {
+    height: 13rem;
+    width: 13rem;
+    fill: #de2b2b;
+}
+
+.signButton {
+    height: 3.5rem;
+    width: 9rem;
+    margin: 0 0 0 3rem;
+    background-color: #de2b2b;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+}
+
+.languageButton{
+    background-color: transparent;
+    height: 3.5rem;
+    width: 10rem;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    padding-left: 2rem;
+}
+
+.dropdown-manu select option {
+    background-color: black;
+}
+
+.dropdown-manu svg {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    max-width: 5rem;
+    max-height: 5rem;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    top: 9rem;
+}
+
+.container h1 {
+    font-size: 5.3rem;
+    margin: 0 0 2rem 0;
+}
+
+.container h2 {
+    font-size: 2.1rem;
+    margin: 0 0 2rem 0;
+
+}
+
+.container h3 {
+    font-size: 1.9rem;
+}
+
+.search-bar {
+    background: transparent;
+    border: none;
+    outline: none;
+    max-width: 40%;
+    position: relative;
+}
+
+.search-bar {
+    width: 100%;
+    background: #fff;
+    align-items: center;
+    border-radius: 0.1rem;
+    padding: 1.8rem;
+    font-size: 1.5rem;
+}
+
+.get-button {
+    height: 5.9rem;
+    width: 20rem;
+    position: relative;
+    top: 0.5rem;
+    left: -0.3rem;
+    border-radius: 0.1rem;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+
+
+/* ---------------------------1st part----------------------------- */
+
+#s1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 8px solid #222;
+    border-bottom: 8px solid #222;
+    align-items: center;
+    padding: 7rem 5rem;
+    position: relative;
+}
+
+.text {
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.text .title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.text .subtitle {
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+
+.first-frame img{
+    max-height: auto;
+    max-width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+.first-frame video {
+    height: 100%;
+    max-height: 40%;
+    object-fit: contain;
+    position: absolute;
+    left: 55.7%;
+    top: 15rem;
+
+    /* transform: translate(-50%, -50%); */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 950px){
+    html{
+        font-size: 50%;
+    }
+    .header {
+        min-height: 80vh;
+    }
+}
+
+
+@media (max-width: 550px){
+    html{
+        font-size: 40%;
+    }
+    .header {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 350px){
+    html{
+        font-size: 30%;
+    }
+    .header {
+        min-height: 60vh;
+    }
+    .dropdown-manu svg {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+}
+
