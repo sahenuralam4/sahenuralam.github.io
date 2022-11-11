@@ -11,7 +11,7 @@ html {
     background-color: #000;
 }
 .header {
-    background: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)),url(https://github.com/sahenuralam4/sahenuralam.github.io/blob/main/img/backgound.jpg);
+    background: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)),url(https://github.com/sahenuralam4/sahenuralam.github.io/blob/c8c7f1d9042a6e1feca3d59a923faee776ba4bfd/img/backgound.jpg?raw=true);
     background-size: cover;
     min-height: 110vh;
     max-width: 100%;
