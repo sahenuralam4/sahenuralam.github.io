@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#header {
+    background-color: #000;
+}
+
+.header {
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://github.com/sahenuralam4/sahenuralam.github.io/blob/c8c7f1d9042a6e1feca3d59a923faee776ba4bfd/img/backgound.jpg?raw=true);
+    background-size: cover;
+    min-height: 110vh;
+    max-width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+
+
+.navbar {
+    top: -3rem;
+    margin: 0 5rem 0 5rem;
+}
+
+.navbar-brand img {
+    height: 13rem;
+    width: 13rem;
+}
+
+.signButton {
+    height: 3.5rem;
+    width: 9rem;
+    margin: 0 0 0 3rem;
+    background-color: #de2b2b;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+}
+
+.languageButton {
+    background-color: transparent;
+    height: 3.5rem;
+    width: 10rem;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    padding-left: 2rem;
+}
+
+.dropdown-manu select option {
+    background-color: black;
+}
+
+.dropdown-manu svg {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    max-width: 5rem;
+    max-height: 5rem;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    top: 9rem;
+}
+
+.container h1 {
+    font-size: 5.3rem;
+    margin: 0 0 2rem 0;
+}
+
+.container h2 {
+    font-size: 2.1rem;
+    margin: 0 0 2rem 0;
+
+}
+
+.container h3 {
+    font-size: 1.9rem;
+}
+
+.search-bar {
+    background: transparent;
+    border: none;
+    outline: none;
+    max-width: 40%;
+    position: relative;
+}
+
+.search-bar {
+    width: 100%;
+    background: #fff;
+    align-items: center;
+    border-radius: 0.1rem;
+    padding: 1.8rem;
+    font-size: 1.5rem;
+}
+
+.get-button {
+    height: 5.9rem;
+    width: 20rem;
+    position: relative;
+    top: 0.5rem;
+    left: -0.3rem;
+    border-radius: 0.1rem;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+
+
+/* ---------------------------1st part----------------------------- */
+
+#s1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 8px solid #222;
+    align-items: center;
+    padding: 7rem 5rem;
+    position: relative;
+}
+
+.text {
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.text .title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.text .subtitle {
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+
+.first-frame img {
+    max-height: auto;
+    max-width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+.first-frame video {
+    height: 100%;
+    max-width: 30%;
+    max-height: 40%;
+    position: absolute;
+    left: 55.6%;
+    top: 28.5%;
+}
+
+
+
+/* <!-- ---------------------------------------------second part-------------------------------------------- --> */
+
+#s2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 8px solid #222;
+    align-items: center;
+    padding: 7rem 5rem;
+    position: relative;
+    color: #fff;
+}
+
+.second-frame-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+}
+
+.second-frame-background-img {
+    max-height: 70%;
+    max-width: 90%;
+}
+
+.second-frame-card-container {
+    align-items: center;
+    background: #000;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 1rem;
+    bottom: 19%;
+    box-shadow: 0 0 2em 0 #000;
+    display: flex;
+    left: 10%;
+    margin: 0 auto;
+    min-width: 1rem;
+    padding: 1rem 1.5em;
+    position: absolute;
+    /* transform: translateX(-50%); */
+    width: 30%;
+
+
+}
+
+.second-frame-foreward-img {
+    margin: 0 1rem 0 0;
+}
+
+.second-frame-foreward-img img {
+    max-height: 40%;
+    max-width: 40%;
+}
+
+.text-1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.text-2 {
+    color: #0071eb;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.second-frame.download-icon {
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: 100%;
+    height: 3.75rem;
+    width: 3rem;
+    outline: 2px solid #000;
+    display: block;
+}
+
+
+
+
+
+
+
+/* <!-- --------------------------------------third part----------------------------------------------  --> */
+
+
+
+#s3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 8px solid #222;
+    align-items: center;
+    padding: 7rem 5rem;
+    position: relative;
+}
+
+
+.third-frame img {
+    max-height: auto;
+    max-width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+.third-frame video {
+    height: 100%;
+    max-width: 23%;
+    max-height: 40%;
+    position: absolute;
+    left: 59%;
+    top: 9.5rem;
+}
+
+
+
+/* <!-- ------------------------------------------------4th part---------------------------------------------- --> */
+
+
+#s4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 8px solid #222;
+    align-items: center;
+    padding: 7rem 5rem;
+    position: relative;
+    color: #fff;
+}
+
+.forth-frame-container img {
+    max-height: auto;
+    max-width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* <!-- ------------------------------------------------5th part---------------------------------------------- --> */
+
+#s5 {
+    border-top: 8px solid #222;
+    border-bottom: 8px solid #222;
+    align-items: center;
+    text-align: center;
+    padding: 7rem 5rem;
+    position: relative;
+    color: #fff;
+}
+
+
+/* <!-- ------------------------------------------------footer part---------------------------------------------- --> */
+
+#footer {
+    text-align: left;
+    padding: 7rem 10rem 3rem 18rem;
+    position: relative;
+    color: rgb(84, 83, 83);
+}
+
+.footer-text a {
+    color: rgb(84, 83, 83);
+    text-decoration: none;
+}
+
+.footer-text h3 {
+    padding-bottom: 2rem;
+}
+
+.footer-text-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 1rem;
+}
+
+.footer-text-group h4 {
+    color: #de2b2b;
+    margin-right: 1rem;
+}
+
+.footer-frame-language-button {
+    padding-top: 5rem;
+}
+
+.footer-frame-language-button select option {
+    background-color: black;
+}
+
+
+.created-by a {
+    color: rgb(84, 83, 83);
+    text-decoration: none;
+}
+
+.created-by {
+    padding-top: 4rem;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        min-height: 80vh;
+    }
+
+    .dropdown-manu svg {
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    html {
+        font-size: 40%;
+    }
+
+    .header {
+        min-height: 70vh;
+    }
+
+    .dropdown-manu svg {
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 30%;
+    }
+
+    .header {
+        min-height: 60vh;
+    }
+
+    .dropdown-manu svg {
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        max-width: 1rem;
+        max-height: 1rem;
+    }
+}
