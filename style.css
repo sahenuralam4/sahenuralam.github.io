@@ -27,10 +27,9 @@ html {
     margin: 0 5rem 0 5rem;
 }
 
-.navbar-brand svg {
+.navbar-brand img {
     height: 13rem;
     width: 13rem;
-    fill: #de2b2b;
 }
 
 .signButton {
@@ -59,7 +58,7 @@ html {
     background-color: black;
 }
 
-.dropdown-manu img {
+.dropdown-manu svg {
     position: absolute;
     margin-top: 1rem;
     margin-left: 0.5rem;
