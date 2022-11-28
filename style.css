@@ -47,11 +47,11 @@ html {
 .languageButton {
     background-color: transparent;
     height: 3.5rem;
-    width: 10rem;
+    width: 12rem;
     color: #fff;
     font-size: 1.5rem;
     border-radius: 0.2rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
 
 .dropdown-manu select option {
@@ -61,7 +61,7 @@ html {
 .dropdown-manu svg {
     position: absolute;
     margin-top: 1rem;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     max-width: 5rem;
     max-height: 5rem;
 }
@@ -87,16 +87,18 @@ html {
     font-size: 1.9rem;
 }
 
-.search-bar {
-    background: transparent;
-    border: none;
-    outline: none;
-    max-width: 40%;
-    position: relative;
+.email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-bar {
-    width: 100%;
+    border: none;
+    outline: none;
+    min-width: 40rem;
+    height: 6rem;
     background: #fff;
     align-items: center;
     border-radius: 0.1rem;
@@ -104,18 +106,17 @@ html {
     font-size: 1.5rem;
 }
 
+
 .get-button {
-    height: 5.9rem;
-    width: 20rem;
-    position: relative;
-    top: 0.5rem;
-    left: -0.3rem;
+    height: 6rem;
+    min-width: 20rem;
     border-radius: 0.1rem;
     background-color: red;
     outline: none;
     border: none;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.625rem;
+    padding: 0 3rem;
 }
 
 
@@ -124,16 +125,18 @@ html {
 /* ---------------------------1st part----------------------------- */
 
 #s1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-top: 8px solid #222;
+    display: flex;
+    flex-direction: row;
+    border-top: 8px solid rgb(34, 34, 34);
     align-items: center;
     padding: 7rem 5rem;
     position: relative;
+    justify-content: space-around;
 }
 
 .text {
-    color: #fff;
+    width: 40%;
+    color: rgb(255, 255, 255);
     position: relative;
     z-index: 3;
 }
@@ -148,9 +151,13 @@ html {
     font-weight: 400;
 }
 
+.first-frame {
+    width: 45%;
+}
+
 .first-frame img {
     max-height: auto;
-    max-width: 90%;
+    max-width: 100%;
     position: relative;
     z-index: 2;
 }
@@ -160,7 +167,7 @@ html {
     max-width: 30%;
     max-height: 40%;
     position: absolute;
-    left: 55.6%;
+    left: 56.6%;
     top: 28.5%;
 }
 
@@ -169,8 +176,8 @@ html {
 /* <!-- ---------------------------------------------second part-------------------------------------------- --> */
 
 #s2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     border-top: 8px solid #222;
     align-items: center;
     padding: 7rem 5rem;
@@ -249,12 +256,17 @@ html {
 
 
 #s3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     border-top: 8px solid #222;
     align-items: center;
     padding: 7rem 5rem;
     position: relative;
+    justify-content: space-around;
+}
+
+.third-frame {
+    width: 45%;
 }
 
 
@@ -270,7 +282,7 @@ html {
     max-width: 23%;
     max-height: 40%;
     position: absolute;
-    left: 59%;
+    left: 58%;
     top: 9.5rem;
 }
 
@@ -280,8 +292,8 @@ html {
 
 
 #s4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     border-top: 8px solid #222;
     align-items: center;
     padding: 7rem 5rem;
@@ -300,14 +312,80 @@ html {
 /* <!-- ------------------------------------------------5th part---------------------------------------------- --> */
 
 #s5 {
-    border-top: 8px solid #222;
-    border-bottom: 8px solid #222;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: auto;
+}
+
+#s5 h1 {
+    color: #fff;
+    font-size: 3rem;
+    padding: 3rem 0 4rem 0;
     text-align: center;
-    padding: 7rem 5rem;
+}
+
+.items1 {
+    background: #303030;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.icon {
+    width: 2rem;
     position: relative;
+}
+
+.icon::before, .icon::after{
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 0.3rem;
+    background: #fff;
+    top: -0.15rem;
+}
+
+.icon::after {
+    transform: rotate(90deg);
+    transition: 0.5s linear;
+}
+
+.text1 {
+    background: #303030;
+    margin: 0.3rem 0;
+    font-size: 1.7rem;
+    height: 0;
+    opacity: 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+.item:target .text1{
+    opacity: 1;
+    height: auto;
+    padding: 2rem 3rem;
+    margin: 0;
+    border-top: 0.2rem solid #000;
+    margin-bottom: 0.6rem;
+}
+
+.item:target .icon::after {
+    transform: rotateY(90deg);
+}
+
+.email-form-title {
+    text-align: center;
     color: #fff;
 }
+
 
 
 /* <!-- ------------------------------------------------footer part---------------------------------------------- --> */
@@ -316,16 +394,17 @@ html {
     text-align: left;
     padding: 7rem 10rem 3rem 18rem;
     position: relative;
-    color: rgb(84, 83, 83);
+    color: rgb(124, 122, 122);
 }
 
 .footer-text a {
-    color: rgb(84, 83, 83);
+    color: rgb(137, 136, 136);
     text-decoration: none;
 }
 
 .footer-text h3 {
     padding-bottom: 2rem;
+    font-weight: 450;
 }
 
 .footer-text-group {
@@ -335,8 +414,9 @@ html {
 }
 
 .footer-text-group h4 {
-    color: #de2b2b;
     margin-right: 1rem;
+    font-weight: 450;
+
 }
 
 .footer-frame-language-button {
@@ -345,6 +425,14 @@ html {
 
 .footer-frame-language-button select option {
     background-color: black;
+}
+
+.footer-frame-language-button svg {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    max-width: 5rem;
+    max-height: 5rem;
 }
 
 
@@ -371,12 +459,16 @@ html {
     }
 
     .header {
-        min-height: 80vh;
+        min-height: 95vh;
     }
 
     .dropdown-manu svg {
-        position: absolute;
-        margin-top: 1rem;
+        margin-left: 0.5rem;
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+
+    .footer-frame-language-button svg {
         margin-left: 0.5rem;
         max-width: 4rem;
         max-height: 4rem;
@@ -384,25 +476,122 @@ html {
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 787px) {
     html {
         font-size: 40%;
     }
 
     .header {
-        min-height: 70vh;
+        min-height: 90vh;
     }
 
     .dropdown-manu svg {
-        position: absolute;
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+    .footer-frame-language-button svg {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+    .footer-text-group {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 0rem;
+    }
+
+    .email-form {
+        flex-direction: column;
+    }
+    
+    .search-bar {
+        min-width: 80%;
+        margin-bottom: 2rem;
         margin-top: 1rem;
-        margin-left: 0.5rem;
-        max-width: 1.5rem;
-        max-height: 1.5rem;
+    }
+
+    #s1 {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .first-frame {
+        width: 80%;
+    }
+
+    .first-frame video {
+        max-width: 50%;
+        left: 24.8%;
+        top: 42%;
+    }
+
+    #s2 {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .second-frame-container {
+        width: 80%;
+    }
+
+    .second-frame-card-container {
+        bottom: 14%;
+        left: 23%;
+        height: 10rem;
+        width: 50%;
+    }
+
+    .second-frame-background-img {
+        max-height: 100rem;
+        max-width: 100%;
+    }
+
+    .second-frame-foreward-img img {
+        max-width: 25%;
+    }
+
+    #s3 {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .third-frame {
+        width: 80%;
+    }
+
+    .third-frame video {
+        max-width: 38%;
+        left: 27%;
+        top: 35%;
+    }
+
+    #s4 {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .forth-frame-container {
+        width: 80%;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 496px) {
     html {
         font-size: 30%;
     }
@@ -412,10 +601,12 @@ html {
     }
 
     .dropdown-manu svg {
-        position: absolute;
-        margin-top: 1rem;
-        margin-left: 0.5rem;
         max-width: 1rem;
         max-height: 1rem;
+    }
+
+    .footer-frame-language-button svg {
+        max-width: 1.5rem;
+        max-height: 1.5rem;
     }
 }
